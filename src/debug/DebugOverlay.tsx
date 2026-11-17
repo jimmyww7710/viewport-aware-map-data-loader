@@ -1,0 +1,4 @@
+type Props = { requests: number; aborted: number; stale: number; markerCount: number; loading: boolean; error: string };
+export function DebugOverlay({ requests, aborted, stale, markerCount, loading, error }: Props) {
+  return <div className="debug-overlay"><div className="debug-heading"><span className={loading ? 'pulse' : 'dot'} /> Live pipeline <span className="dev-only">DEV</span></div><div className="metric"><span>Requests sent</span><strong>{requests}</strong></div><div className="metric"><span>Requests aborted</span><strong>{aborted}</strong></div><div className="metric"><span>Stale dropped</span><strong>{stale}</strong></div><div className="metric"><span>Rendered features</span><strong>{markerCount.toLocaleString()}</strong></div>{error && <div className="error">{error}</div>}</div>;
+}
