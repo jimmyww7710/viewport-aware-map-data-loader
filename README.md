@@ -43,6 +43,11 @@ The important check is identity, not response timing. A slow response from an ea
 
 See [`TRADEOFFS.md`](./TRADEOFFS.md) for the major implementation choices.
 
+## Performance
+
+See [`PERFORMANCE.md`](./PERFORMANCE.md) for the performance testing procedure,
+current implementation, bottlenecks, and optimization roadmap.
+
 ## Publishing checklist
 
 - [x] Synthetic data only.
